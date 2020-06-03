@@ -8,7 +8,6 @@ body {
     height: 1000px;
     padding-top: 1px;
 }
-
 .homepage .heading {
     width: 750px;
     height: 275px;
@@ -284,22 +283,27 @@ body {
 .testimonials .companies img:first-child {
     width: 152px;
     height: 25px;
+    margin-top: 20px;
 }
 .testimonials .companies img:nth-child(2) {
     width: 71px;
     height: 44px;
+    margin-top: 10px;
 }
 .testimonials .companies img:nth-child(3) {
     width: 92px;
     height: 28px;
+    margin-top: 15px;
 }
 .testimonials .companies img:nth-child(4) {
     width: 68px;
     height: 42px;
+    margin-top: 10px;
 }
 .testimonials .companies img:nth-child(5) {
     width: 116px;
     height: 30px;
+    margin-top: 15px;
 }
 .testimonials .companies img:nth-child(6) {
     width: 84px;
@@ -309,6 +313,7 @@ body {
     width: 76px;
     height: 24px;
     filter: contrast(0) brightness(2) saturate(0.5);
+    margin-top: 15px;
 }
 .testimonials .testimonials-description {
     width: 750px;
@@ -360,7 +365,7 @@ body {
     margin: 0;
 }
 .testimonials .horizontal-lines {
-    margin-left: 40%;
+    margin-left: 40.5%;
     margin-top: 3%;
 }
 .testimonials .horizontal-lines img {
@@ -416,7 +421,62 @@ body {
 }
 .team .team-table .team-name:first-child {
     border-bottom: 2px solid #202020;
-    border-right: 2px solid #202020;
+    border-right: 2px solid #202020; 
+}
+.team .team-table .team-name .em-name .emp-content p {
+    display: none;
+}
+.team .team-table .team-name .em-name .employee {
+    display: block;
+}
+.team .team-table .team-name .em-name .employee p {
+    display: block;
+}
+.team .team-table .team-name:hover .em-name {
+    display: flex;
+}
+.team .team-table .team-name:hover .em-name .employee {
+    margin-top: 70px;
+    margin-left: -20px;
+}
+.team .team-table .team-name:hover .em-name .employee h1 {
+    transform: rotate(90deg);
+    line-height: 5px;
+}
+.team .team-table .team-name:hover .em-name .employee p {
+    transform: rotate(90deg);
+    color: #ffffff;
+    font-family: "Open Sans";
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 45px;
+}
+.team .team-table .team-name:hover .em-name .emp-content p {
+    display: block;
+    color: #bababa;
+    font-family: "Open Sans";
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 25px;
+    width: 180px;
+    margin: -45px 10px 0 -32px;
+}
+.team .team-table .team-name:hover {
+    text-align: left;
+    padding: 50px 70px 100px 70px;
+    padding: .1px;
+    padding-top: 0;
+}
+.team .team-table .team-name:hover .emp-img img {
+    width: 49px;
+    height: 49px;
+    margin-top: 15px;
+    margin-left: 15px;
+}
+.team .team-table .team-name:hover .emp-img {
+    margin-right: 200px;
+    border-left: #feb960 2px solid;
+    border-top: #feb960 2px solid;
 }
 .team .team-table .team-name:nth-child(2){
     border-bottom: 2px solid #202020;
@@ -465,7 +525,7 @@ body {
 .contact {
     width: 1920px;
     height: 1175px;
-    background-color: #202020;
+    background-color: #353535;
 }
 .contact .line {
     margin-left: 50%;
@@ -520,10 +580,11 @@ body {
 }
 .contact .contact-details .california-office p:last-child {
     height: 106px;
-    color: #bababa;
+    color: #7c7c7c;
     font-family: "Open Sans";
     font-size: 14px;
     font-weight: 400;  
+    line-height: 22px;
 }
 .contact .contact-details .ny-office p:first-child{
     color: #ffffff;
@@ -534,10 +595,11 @@ body {
 }
 .contact .contact-details .ny-office p:last-child {
     height: 106px;
-    color: #bababa;
+    color: #7c7c7c;
     font-family: "Open Sans";
     font-size: 14px;
     font-weight: 400;
+    line-height: 22px;
 }
 .contact .contact-details .other-contact p:first-child {
     color: #ffffff;
@@ -546,10 +608,14 @@ body {
     line-height: 40px;
     text-transform: uppercase;
 }
-.contact .contact-details .other-contact p:last-child {
-    height: 106px;
-    color: #bababa;
+.contact .contact-details .other-contact p:nth-child(2) {
+    color: #7c7c7c;
     font-family: "Open Sans";
     font-size: 14px;
     font-weight: 400;
+}
+.contact .contact-details .other-contact .contact-icons img {
+    width: 23px;
+    height: 23px;
+    margin: 5px 0;
 }
