@@ -40,15 +40,8 @@ body {
     font-size: 13px;
     font-family: "Open Sans";
 }
-.motto p:first-child {
+.motto p {
     border-right: #f7ac53 2px solid;
-    padding: 0 5px;
-}
-.motto p:nth-child(2) {
-    border-right: #f7ac53 2px solid;
-    padding: 0 5px;
-}
-.motto p:last-child {
     padding: 0 5px;
 }
 .arrow {
@@ -70,7 +63,6 @@ body {
 }
 .getintouch-text {
     display: flex;
-    
 }
 .getintouch-text p {
     height: 11px;
@@ -171,14 +163,6 @@ body {
     height: 951px;
     background-color: #181818;
 }
-/* .portfolio .line {
-    margin-left: 50%;
-    width: 2px;
-    height: 126px;
-    background-color: #feb960;
-    color: #feb960;
-} */
-
 .portfolio .portfolio-position {
     display: flex;
 }
@@ -422,9 +406,6 @@ body {
     margin: 20px 300px 20px 300px;
     height: 625px;
 }
-/* .team .team-table img {
-    
-} */
 .team .team-table .team-name {
     text-align: center;
     padding: 50px 70px 100px 70px;
@@ -475,18 +456,17 @@ body {
     text-align: left;
     padding: 50px 70px 100px 70px;
     padding: .1px;
-    padding-top: 0;
+}
+.team .team-table .team-name:hover .emp-img {
+    margin-right: 200px;
+    border-left: #feb960 2px solid;
+    border-top: #feb960 2px solid;
 }
 .team .team-table .team-name:hover .emp-img img {
     width: 49px;
     height: 49px;
     margin-top: 15px;
     margin-left: 15px;
-}
-.team .team-table .team-name:hover .emp-img {
-    margin-right: 200px;
-    border-left: #feb960 2px solid;
-    border-top: #feb960 2px solid;
 }
 .team .team-table .team-name:nth-child(2){
     border-bottom: 2px solid #202020;
@@ -581,51 +561,22 @@ body {
     height: 45px;
     margin-top: 30px;
 }
-.contact .contact-details .california-office p:first-child {
+.contact .contact-details .office p:first-child {
     color: #ffffff;
     font-family: "Open Sans - Semibold";
     font-weight: 600;
     line-height: 40px;
     text-transform: uppercase;
 }
-.contact .contact-details .california-office p:last-child {
-    height: 106px;
+.contact .contact-details .office p:nth-child(2) {
     color: #7c7c7c;
     font-family: "Open Sans";
     font-size: 14px;
     font-weight: 400;  
     line-height: 22px;
 }
-.contact .contact-details .ny-office p:first-child{
-    color: #ffffff;
-    font-family: "Open Sans - Semibold";
-    font-weight: 600;
-    line-height: 40px;
-    text-transform: uppercase;
-}
-.contact .contact-details .ny-office p:last-child {
-    height: 106px;
-    color: #7c7c7c;
-    font-family: "Open Sans";
-    font-size: 14px;
-    font-weight: 400;
-    line-height: 22px;
-}
-.contact .contact-details .other-contact p:first-child {
-    color: #ffffff;
-    font-family: "Open Sans - Semibold";
-    font-weight: 600;
-    line-height: 40px;
-    text-transform: uppercase;
-}
-.contact .contact-details .other-contact p:nth-child(2) {
-    color: #7c7c7c;
-    font-family: "Open Sans";
-    font-size: 14px;
-    font-weight: 400;
-}
-.contact .contact-details .other-contact .contact-icons img {
+.contact .contact-details .office .contact-icons img {
     width: 23px;
     height: 23px;
-    margin: 5px 0;
+    margin:0;
 }
