@@ -572,6 +572,7 @@ body {
     margin-left: 65px;
     margin-right: 35px;
 }
+
 .contact .contact-box .form-1st-section .client-mail {
     margin-left: 35px;
 }
@@ -599,17 +600,37 @@ body {
     color: #ffffff;
     border: none;
     padding: 5px;
+    border-bottom: 2px solid #5c5c5c;
+    padding-right: 103px;
 }
-.contact .contact-box .gray-line {
-    width: 276px;
-    height: 2px;
-    background-color: #5c5c5c;
-    margin-bottom: 30px;
+.contact .contact-box .input-text-long {
+    background-color: #181818;
+    /* background-color: #000000; */
+    color: #ffffff;
+    border: none;
+    padding: 5px;
+    border-bottom: 2px solid #5c5c5c;
+    padding-right: 450px;
 }
-.contact .contact-box .gray-long-line {
-    width: 636px;
-    height: 2px;
-    background-color: #5c5c5c;
+.contact .contact-box .input-text:focus {
+    font-family: "Open Sans";
+    font-size: 11px;
+    font-weight: 400;
+    text-transform: uppercase;
+    padding-right: 129px;
+    border-bottom: 2px solid #feb960;
+    outline: none;
+    padding-top: 8px;
+}
+.contact .contact-box .input-text-long:focus {
+    font-family: "Open Sans";
+    font-size: 11px;
+    font-weight: 400;
+    text-transform: uppercase;
+    padding-right: 476px;
+    border-bottom: 2px solid #feb960;
+    outline: none;
+    padding-top: 8px;
 }
 .contact .contact-box .submit-button {
     display: flex;
@@ -672,4 +693,9 @@ body {
     width: 23px;
     height: 23px;
     margin:0;
+}
+
+.contact .contact-box .active {
+    color: #feb960;
+    font-size: 11px;
 }
