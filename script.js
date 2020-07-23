@@ -53,9 +53,3 @@ inputMessage.addEventListener('click', event => {
         labelMessage.classList.add('active');
     }
 });
-
-// const remover = document.querySelector('.input-text');
-// remover.addEventListener('click', event => {
-//     document.querySelector('.label').style.color = '#ffffff';
-//     document.querySelector('.label').style.fontSize = '14px';
-// });
