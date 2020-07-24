@@ -1,5 +1,5 @@
 const inputName = document.querySelector('#input-name');
-// click Event - change elements after the click
+// Click Event - change elements after the click
 inputName.addEventListener('click', event => {
     let labelName = document.querySelector('#label-name');
     console.log(labelName);
