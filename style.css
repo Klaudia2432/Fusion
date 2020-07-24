@@ -5,6 +5,7 @@
 
 body {
   margin: 0;
+  /* Scrollbar */
 }
 body::-webkit-scrollbar {
   width: 1.5em;
@@ -14,9 +15,9 @@ body::-webkit-scrollbar-track {
   background: #000;
 }
 body::-webkit-scrollbar-thumb {
-  background-color: #d2ccc4;
-  background-image: linear-gradient(315deg, #d2ccc4 0%, #8b8b8b 74%);
-  outline: 1px solid slategray;
+  background-color: #ffffff;
+  background-image: linear-gradient(315deg, #f9c486 0%, #f7ac53 74%);
+  outline: 1px solid #feb960;
   border-radius: 10px;
 }
 
@@ -776,7 +777,12 @@ body::-webkit-scrollbar-thumb {
   width: 220px;
   height: 60px;
   background-color: #feb960;
+  background-image: linear-gradient(300deg, #f9c486 0%, #f7ac53 74%);
   border: none;
+  transition: all 2s ease 0s;
+}
+.contact .contact-box .submit-button button:hover {
+  background: #feb960;
 }
 .contact .contact-box .submit-button button p {
   color: #232323;
