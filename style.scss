@@ -608,12 +608,17 @@ body {
 
     .team-name {
       text-align: center;
-      padding: 50px 70px 100px 70px;
+      padding: 50px 0 100px 0;
+      position: relative;
+      width: 25%;
+      height: 55%;
 
       &:hover {
         text-align: left;
-        padding: 50px 70px 100px 70px;
-        padding: .1px;
+        padding: 0.1px;
+        transition: all .5s ease-in-out 0s;
+        width: 25%;
+        height: 55%;
 
         .emp-img {
           margin-right: 200px;
