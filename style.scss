@@ -1,144 +1,13 @@
-/* SCSS variables */
-$goldenColor: #feb960;
-$whiteColor: #ffffff;
-$goldenrod-color: #f7ac53;
-$neroColor: #181818;
-$cherokeeColor: #f9c486;
-
-$merriweatherFont: Merriweather, serif;
-$openSansFont: "Open Sans", serif;
-$opensansSemiboldFont: "Open Sans - Semibold", serif;
-$elegantIcons: "Elegant Icons";
-
-$goldenBorder: $goldenColor 2px solid;
-$darkGreyBorder: 2px solid #202020;
-$robotoFont: Roboto, serif;
-
+@import "scss/variables";
+@import "scss/preloader";
+@import "scss/scrollbar";
 
 *, *::before, *::after {
-  box-sizing: border-box;
+  box-sizing: content-box;
 }
 
 body {
   margin: 0;
-
-  /* Scrollbar */
-
-  &::-webkit-scrollbar {
-    width: 1.5em;
-  }
-
-  &::-webkit-scrollbar-track {
-    box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
-    background: #000;
-  }
-
-  &::-webkit-scrollbar-thumb {
-    background-color: $whiteColor;
-    background-image: linear-gradient(315deg, $cherokeeColor 0%, $goldenrod-color 74%);
-    outline: 1px solid $goldenColor;
-    border-radius: 10px;
-  }
-}
-
-/* Preloader */
-
-.complete {
-  opacity: 0;
-  visibility: hidden;
-  pointer-events: none;
-
-  &:before {
-    left: -50%;
-  }
-  &:after {
-    right: -50%;
-  }
-}
-
-.preloader {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: $neroColor;
-  transition: 1s;
-
-  &:before {
-    content: '';
-    position: absolute;
-    left: 0;
-    width: 50%;
-    height: 100%;
-    background: $neroColor;
-  }
-  &:after {
-    content: '';
-    position: absolute;
-    right: 0;
-    width: 50%;
-    height: 100%;
-    background: $neroColor;
-  }
-
-  .loader {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    width: 40px;
-    height: 40px;
-    border: 3px solid $whiteColor;
-    animation: animate 2s linear infinite;
-    z-index: 10000;
-
-    &:before {
-      content: '';
-      position: absolute;
-      top: 0;
-      right: 0;
-      bottom: 0;
-      left: 0;
-      background: $whiteColor;
-      animation: animateBg 2s linear infinite;
-    }
-  }
-}
-
-@keyframes animate {
-  0% {
-    transform: translate(-50%, -50%) rotate(0deg);
-  }
-  25% {
-    transform: translate(-50%, -50%) rotate(180deg);
-  }
-  50% {
-    transform: translate(-50%, -50%) rotate(180deg);
-  }
-  75% {
-    transform: translate(-50%, -50%) rotate(360deg);
-  }
-  100% {
-    transform: translate(-50%, -50%) rotate(360deg);
-  }
-}
-@keyframes animateBg {
-  0% {
-    height: 0;
-  }
-  25% {
-    height: 0;
-  }
-  50% {
-    height: 100%;
-  }
-  75% {
-    height: 100%;
-  }
-  100% {
-    height: 0;
-  }
 }
 
 /* Homepage section */
@@ -162,9 +31,7 @@ body {
 
       h1 {
         color: $whiteColor;
-        font-family: $merriweatherFont;
-        font-size: 55px;
-        font-weight: 400;
+        font: 400 55px $merriweatherFont;
         line-height: 90px;
         margin-top: 50px;
 
@@ -182,9 +49,7 @@ body {
   justify-content: center;
   color: $whiteColor;
   text-transform: uppercase;
-  font-weight: 400;
-  font-size: 13px;
-  font-family: $openSansFont;
+  @include open-sans-13px-400;
 
   p {
     border-right: $goldenrod-color 2px solid;
@@ -222,9 +87,7 @@ body {
   p {
     height: 11px;
     color: $whiteColor;
-    font-family: $robotoFont;
-    font-size: 14px;
-    font-weight: 500;
+    font: 500 14px $robotoFont;
     text-transform: uppercase;
     margin-top: 10px;
   }
@@ -254,9 +117,7 @@ body {
     margin: 0;
     height: 12px;
     color: $goldenColor;
-    font-family: $opensansSemiboldFont;
-    font-size: 14px;
-    font-weight: 400;
+    @include open-sans-semibold-14px-400;
     line-height: 40px;
     text-transform: uppercase;
   }
@@ -265,9 +126,7 @@ body {
     text-align: center;
     height: 107px;
     color: $whiteColor;
-    font-family: $merriweatherFont;
-    font-size: 40px;
-    font-weight: 400;
+    font: 400 40px $merriweatherFont;
     line-height: 65px;
     margin-top: 20px;
   }
@@ -281,18 +140,14 @@ body {
       width: 131px;
       height: 31px;
       color: $whiteColor;
-      font-family: $merriweatherFont;
-      font-size: 30px;
-      font-weight: 400;
+      font: 400 30px $merriweatherFont;
       line-height: 65px;
     }
     p {
       width: 223px;
       height: 96px;
       color: #bbbbbb;
-      font-family: $openSansFont;
-      font-size: 14px;
-      font-weight: 400;
+      @include open-sans-14px-400;
       line-height: 27px;
       margin-top: 40px;
       opacity: .7;
@@ -310,9 +165,7 @@ body {
   p {
     height: 12px;
     color: $whiteColor;
-    font-family: $openSansFont;
-    font-size: 14px;
-    font-weight: 400;
+    @include open-sans-14px-400;
     line-height: 28px;
     text-transform: uppercase;
     width: auto;
@@ -339,9 +192,7 @@ body {
       .band p {
         height: 12px;
         color: $goldenColor;
-        font-family: $opensansSemiboldFont;
-        font-size: 14px;
-        font-weight: 400;
+        @include open-sans-semibold-14px-400;
         line-height: 40px;
         text-transform: uppercase;
         margin-right: 20px;
@@ -351,9 +202,7 @@ body {
       height: 59px;
       text-shadow: 0 0 10px rgba(24, 24, 24, 0.5);
       color: $whiteColor;
-      font-family: $merriweatherFont;
-      font-size: 55px;
-      font-weight: 400;
+      font: 400 55px $merriweatherFont;
       line-height: 65.02px;
       margin-top: 20px;
       position: absolute;
@@ -382,9 +231,7 @@ body {
       p {
         height: 14px;
         color: $whiteColor;
-        font-family: $opensansSemiboldFont;
-        font-size: 14px;
-        font-weight: 400;
+        @include open-sans-semibold-14px-400;
         line-height: 28px;
         text-transform: uppercase;
       }
@@ -416,9 +263,7 @@ body {
   .testimonials-text p {
     height: 12px;
     color: $goldenColor;
-    font-family: $opensansSemiboldFont;
-    font-size: 14px;
-    font-weight: 400;
+    @include open-sans-semibold-14px-400;
     line-height: 40px;
     text-transform: uppercase;
     text-align: center;
@@ -428,13 +273,11 @@ body {
     text-align: center;
     height: 107px;
     color: $whiteColor;
-    font-family: $merriweatherFont;
-    font-size: 40px;
-    font-weight: 400;
-    line-height: 65px;
+    font: 400 40px $merriweatherFont;
 
     p {
       margin-top: 20px;
+      line-height: 65px;
     }
   }
   .companies {
@@ -503,9 +346,7 @@ body {
   .testimonials-description-text p {
     height: 125px;
     color: #bbbbbb;
-    font-family: $merriweatherFont;
-    font-size: 17px;
-    font-weight: 400;
+    font: 400 17px $merriweatherFont;
     line-height: 35px;
     text-align: center;
     opacity: .7;
@@ -531,9 +372,7 @@ body {
     p {
       height: 12px;
       color: $goldenColor;
-      font-family: $opensansSemiboldFont;
-      font-size: 14px;
-      font-weight: 400;
+      @include open-sans-semibold-14px-400;
       line-height: 35px;
       text-transform: uppercase;
       text-align: center;
@@ -545,9 +384,7 @@ body {
   .source p {
     height: 12px;
     color: $whiteColor;
-    font-family: $openSansFont;
-    font-size: 13px;
-    font-weight: 400;
+    @include open-sans-13px-400;
     line-height: 35px;
     opacity: .7;
   }
@@ -579,9 +416,7 @@ body {
   .team-text p {
     height: 12px;
     color: $goldenColor;
-    font-family: $opensansSemiboldFont;
-    font-size: 14px;
-    font-weight: 400;
+    @include open-sans-semibold-14px-400;
     line-height: 40px;
     text-transform: uppercase;
     text-align: center;
@@ -592,9 +427,7 @@ body {
     text-align: center;
     height: 107px;
     color: $whiteColor;
-    font-family: $merriweatherFont;
-    font-size: 40px;
-    font-weight: 400;
+    font: 400 40px $merriweatherFont;
     line-height: 65px;
   }
 
@@ -635,18 +468,15 @@ body {
       }
 
       &:first-child {
-        border-bottom: $darkGreyBorder;
-        border-right: $darkGreyBorder;
+        @include darkGray-border-right-bottom;
       }
 
       &:nth-child(2){
-        border-bottom: $darkGreyBorder;
-        border-right: $darkGreyBorder;
+        @include darkGray-border-right-bottom;
       }
 
       &:nth-child(3){
-        border-bottom: $darkGreyBorder;
-        border-right: $darkGreyBorder;
+        @include darkGray-border-right-bottom;
       }
 
       &:nth-child(4){
@@ -675,9 +505,7 @@ body {
       p {
         height: 10px;
         color: $whiteColor;
-        font-family: $openSansFont;
-        font-size: 13px;
-        font-weight: 400;
+        @include open-sans-13px-400;
         line-height: 65px;
       }
 
@@ -686,9 +514,7 @@ body {
         h1 {
           height: 12px;
           color: #feb960;
-          font-family: $opensansSemiboldFont;
-          font-size: 14px;
-          font-weight: 400;
+          @include open-sans-semibold-14px-400;
           line-height: 65px;
           text-transform: uppercase;
         }
@@ -720,9 +546,7 @@ body {
           p {
             transform: rotate(90deg);
             color: $whiteColor;
-            font-family: $openSansFont;
-            font-size: 13px;
-            font-weight: 400;
+            @include open-sans-13px-400;
             line-height: 45px;
           }
         }
@@ -730,9 +554,7 @@ body {
         .emp-content p {
           display: block;
           color: #bababa;
-          font-family: $openSansFont;
-          font-size: 13px;
-          font-weight: 400;
+          @include open-sans-13px-400;
           line-height: 25px;
           width: 180px;
           margin: -45px 12px 0 -32px;
@@ -759,9 +581,7 @@ body {
   .contact-text p {
     height: 12px;
     color: $goldenColor;
-    font-family: $opensansSemiboldFont;
-    font-size: 14px;
-    font-weight: 400;
+    @include open-sans-semibold-14px-400;
     line-height: 40px;
     text-transform: uppercase;
     text-align: center;
@@ -772,9 +592,7 @@ body {
     text-align: center;
     height: 107px;
     color: $whiteColor;
-    font-family: $merriweatherFont;
-    font-size: 40px;
-    font-weight: 400;
+    font: 400 40px $merriweatherFont;
     line-height: 65px;
 
     p {
@@ -787,7 +605,7 @@ body {
     height: 501px;
     box-shadow: 3px 4px 15px rgba(0, 0, 0, 0.3);
     background-color: $neroColor;
-    margin: 100px 0 0 590px;
+    margin: 10px 0 50px 570px;
   }
 }
 
@@ -848,13 +666,11 @@ body {
     background-color: $neroColor;
     color: $whiteColor;
     border: none;
-    padding: 5px;
     border-bottom: 2px solid #5c5c5c;
-    padding-right: 103px;
+    padding: 5px 108px 5px 5px;
 
     &:focus {
-      font-family: $openSansFont;
-      font-size: 11px;
+      font: 11px $openSansFont;
       font-weight: 400;
       text-transform: uppercase;
       padding-right: 129px;
@@ -866,16 +682,13 @@ body {
 
   .input-text-long {
     background-color: $neroColor;
-    /* background-color: #000000; */
     color: $whiteColor;
     border: none;
-    padding: 5px;
     border-bottom: 2px solid #5c5c5c;
-    padding-right: 450px;
+    padding: 5px 455px 5px 5px;
 
     &:focus {
-      font-family: $openSansFont;
-      font-size: 11px;
+      font: 11px $openSansFont;
       font-weight: 400;
       text-transform: uppercase;
       padding-right: 476px;
@@ -904,9 +717,7 @@ body {
 
       p {
         color: #232323;
-        font-family: $opensansSemiboldFont;
-        font-size: 17px;
-        font-weight: 400;
+        @include open-sans-semibold-14px-400;
         line-height: 65px;
         text-transform: uppercase;
         margin-top: -5px;
@@ -923,8 +734,7 @@ body {
     font-size: 24px;
     font-weight: 400;
     line-height: 40px;
-    margin-left: -55px;
-    margin-top: 25px;
+    margin: 25px 0 0 -55px;
   }
 
   .active {
@@ -959,9 +769,7 @@ body {
 
       &:nth-child(2) {
         color: #7c7c7c;
-        font-family: $openSansFont;
-        font-size: 14px;
-        font-weight: 400;
+        @include open-sans-14px-400;
         line-height: 22px;
       }
     }
@@ -971,97 +779,5 @@ body {
       height: 23px;
       margin:0;
     }
-  }
-}
-
-/*Media query*/
-@media only screen and (min-width: 360px) and (max-width: 767px) {
-  .homepage .heading {
-    margin-left: 19%;
-  }
-
-  .motto {
-    margin-right: 23%;
-  }
-
-  .arrow {
-    margin-left: -10%;
-  }
-
-  .icon-content {
-    margin-right: 20%;
-  }
-
-  .services .line {
-    margin-left: 39%;
-  }
-
-  .services .our-services-text p {
-    margin-right: 22%;
-  }
-
-  .services .service-text p {
-    margin-right: 22%;
-  }
-
-  .our-services {
-    margin-right: 22%;
-  }
-
-  .portfolio-position {
-    margin-right: 22%;
-  }
-
-  .portfolio .horizontal-lines {
-    margin-left: 29%;
-  }
-
-  .testimonials .line {
-    margin-left: 39%;
-  }
-
-  .testimonials .testimonials-text p {
-    margin-right: 22%;
-  }
-  .testimonials .testimonials-info {
-    margin-right: 22%;
-  }
-  .testimonials .companies {
-    margin-right: 22%;
-  }
-  .testimonials .testimonials-description {
-    margin-left: 20%;
-  }
-  .testimonials .horizontal-lines {
-    margin-left: 29%;
-  }
-  .team .line {
-    margin-left: 39%;
-  }
-  .team .team-text p {
-    margin-right: 22%;
-  }
-  .team .team-info {
-    margin-right: 22%;
-  }
-  .team .team-table {
-    margin-right: 30%;
-    margin-left: 8%;
-  }
-  .contact .line {
-    margin-left: 39%;
-  }
-  .contact .contact-text p {
-    margin-right: 22%;
-  }
-  .contact .contact-info {
-    margin-right: 22%;
-  }
-  .contact .contact-box {
-    margin-left: 20%;
-  }
-  .contact .contact-details {
-    margin-right: 40%;
-    margin-left: 19%;
   }
 }

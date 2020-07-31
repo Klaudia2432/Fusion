@@ -1,0 +1,41 @@
+// SCSS variables
+
+// Colors
+
+$goldenColor: #feb960;
+$whiteColor: #ffffff;
+$goldenrod-color: #f7ac53;
+$neroColor: #181818;
+$cherokeeColor: #f9c486;
+
+// Font family
+
+$merriweatherFont: Merriweather, serif;
+$openSansFont: "Open Sans", serif;
+$opensansSemiboldFont: "Open Sans - Semibold", serif;
+$elegantIcons: "Elegant Icons";
+$robotoFont: Roboto, serif;
+
+// Borders
+
+$goldenBorder: $goldenColor 2px solid;
+$darkGreyBorder: 2px solid #202020;
+
+// Placeholders
+
+@mixin darkGray-border-right-bottom {
+  border-bottom: $darkGreyBorder;
+  border-right: $darkGreyBorder;
+}
+
+@mixin open-sans-13px-400 {
+  font: 400 13px $openSansFont;
+}
+
+@mixin open-sans-14px-400 {
+  font: 400 14px $openSansFont;
+}
+
+@mixin open-sans-semibold-14px-400 {
+  font: 400 14px $opensansSemiboldFont;
+}

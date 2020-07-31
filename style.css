@@ -1,27 +1,3 @@
-/* SCSS variables */
-*, *::before, *::after {
-  box-sizing: border-box;
-}
-
-body {
-  margin: 0;
-  /* Scrollbar */
-}
-body::-webkit-scrollbar {
-  width: 1.5em;
-}
-body::-webkit-scrollbar-track {
-  box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
-  background: #000;
-}
-body::-webkit-scrollbar-thumb {
-  background-color: #ffffff;
-  background-image: linear-gradient(315deg, #f9c486 0%, #f7ac53 74%);
-  outline: 1px solid #feb960;
-  border-radius: 10px;
-}
-
-/* Preloader */
 .complete {
   opacity: 0;
   visibility: hidden;
@@ -115,6 +91,28 @@ body::-webkit-scrollbar-thumb {
     height: 0;
   }
 }
+body::-webkit-scrollbar {
+  width: 1.5em;
+}
+body::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+  background: #000;
+}
+body::-webkit-scrollbar-thumb {
+  background-color: #ffffff;
+  background-image: linear-gradient(315deg, #f9c486 0%, #f7ac53 74%);
+  outline: 1px solid #feb960;
+  border-radius: 10px;
+}
+
+*, *::before, *::after {
+  box-sizing: content-box;
+}
+
+body {
+  margin: 0;
+}
+
 /* Homepage section */
 .homepage {
   background-image: url(../Fusion/images/heading-background.png);
@@ -136,9 +134,7 @@ body::-webkit-scrollbar-thumb {
 }
 .homepage .heading .heading-text h1 {
   color: #ffffff;
-  font-family: Merriweather, serif;
-  font-size: 55px;
-  font-weight: 400;
+  font: 400 55px Merriweather, serif;
   line-height: 90px;
   margin-top: 50px;
 }
@@ -152,9 +148,7 @@ body::-webkit-scrollbar-thumb {
   justify-content: center;
   color: #ffffff;
   text-transform: uppercase;
-  font-weight: 400;
-  font-size: 13px;
-  font-family: "Open Sans", serif;
+  font: 400 13px "Open Sans", serif;
 }
 .motto p {
   border-right: #f7ac53 2px solid;
@@ -191,9 +185,7 @@ body::-webkit-scrollbar-thumb {
 .getintouch-text p {
   height: 11px;
   color: #ffffff;
-  font-family: Roboto, serif;
-  font-size: 14px;
-  font-weight: 500;
+  font: 500 14px Roboto, serif;
   text-transform: uppercase;
   margin-top: 10px;
 }
@@ -221,9 +213,7 @@ body::-webkit-scrollbar-thumb {
   margin: 0;
   height: 12px;
   color: #feb960;
-  font-family: "Open Sans - Semibold", serif;
-  font-size: 14px;
-  font-weight: 400;
+  font: 400 14px "Open Sans - Semibold", serif;
   line-height: 40px;
   text-transform: uppercase;
 }
@@ -231,9 +221,7 @@ body::-webkit-scrollbar-thumb {
   text-align: center;
   height: 107px;
   color: #ffffff;
-  font-family: Merriweather, serif;
-  font-size: 40px;
-  font-weight: 400;
+  font: 400 40px Merriweather, serif;
   line-height: 65px;
   margin-top: 20px;
 }
@@ -246,18 +234,14 @@ body::-webkit-scrollbar-thumb {
   width: 131px;
   height: 31px;
   color: #ffffff;
-  font-family: Merriweather, serif;
-  font-size: 30px;
-  font-weight: 400;
+  font: 400 30px Merriweather, serif;
   line-height: 65px;
 }
 .services .our-services p {
   width: 223px;
   height: 96px;
   color: #bbbbbb;
-  font-family: "Open Sans", serif;
-  font-size: 14px;
-  font-weight: 400;
+  font: 400 14px "Open Sans", serif;
   line-height: 27px;
   margin-top: 40px;
   opacity: 0.7;
@@ -273,9 +257,7 @@ body::-webkit-scrollbar-thumb {
 .see-details p {
   height: 12px;
   color: #ffffff;
-  font-family: "Open Sans", serif;
-  font-size: 14px;
-  font-weight: 400;
+  font: 400 14px "Open Sans", serif;
   line-height: 28px;
   text-transform: uppercase;
   width: auto;
@@ -301,9 +283,7 @@ body::-webkit-scrollbar-thumb {
 .portfolio .portfolio-position .brand-content .band p {
   height: 12px;
   color: #feb960;
-  font-family: "Open Sans - Semibold", serif;
-  font-size: 14px;
-  font-weight: 400;
+  font: 400 14px "Open Sans - Semibold", serif;
   line-height: 40px;
   text-transform: uppercase;
   margin-right: 20px;
@@ -312,9 +292,7 @@ body::-webkit-scrollbar-thumb {
   height: 59px;
   text-shadow: 0 0 10px rgba(24, 24, 24, 0.5);
   color: #ffffff;
-  font-family: Merriweather, serif;
-  font-size: 55px;
-  font-weight: 400;
+  font: 400 55px Merriweather, serif;
   line-height: 65.02px;
   margin-top: 20px;
   position: absolute;
@@ -342,9 +320,7 @@ body::-webkit-scrollbar-thumb {
 .portfolio .port-text .portfolio-text p {
   height: 14px;
   color: #ffffff;
-  font-family: "Open Sans - Semibold", serif;
-  font-size: 14px;
-  font-weight: 400;
+  font: 400 14px "Open Sans - Semibold", serif;
   line-height: 28px;
   text-transform: uppercase;
 }
@@ -372,9 +348,7 @@ body::-webkit-scrollbar-thumb {
 .testimonials .testimonials-text p {
   height: 12px;
   color: #feb960;
-  font-family: "Open Sans - Semibold", serif;
-  font-size: 14px;
-  font-weight: 400;
+  font: 400 14px "Open Sans - Semibold", serif;
   line-height: 40px;
   text-transform: uppercase;
   text-align: center;
@@ -384,13 +358,11 @@ body::-webkit-scrollbar-thumb {
   text-align: center;
   height: 107px;
   color: #ffffff;
-  font-family: Merriweather, serif;
-  font-size: 40px;
-  font-weight: 400;
-  line-height: 65px;
+  font: 400 40px Merriweather, serif;
 }
 .testimonials .testimonials-info p {
   margin-top: 20px;
+  line-height: 65px;
 }
 .testimonials .companies {
   display: flex;
@@ -448,9 +420,7 @@ body::-webkit-scrollbar-thumb {
 .testimonials .testimonials-description-text p {
   height: 125px;
   color: #bbbbbb;
-  font-family: Merriweather, serif;
-  font-size: 17px;
-  font-weight: 400;
+  font: 400 17px Merriweather, serif;
   line-height: 35px;
   text-align: center;
   opacity: 0.7;
@@ -473,9 +443,7 @@ body::-webkit-scrollbar-thumb {
 .testimonials .author p {
   height: 12px;
   color: #feb960;
-  font-family: "Open Sans - Semibold", serif;
-  font-size: 14px;
-  font-weight: 400;
+  font: 400 14px "Open Sans - Semibold", serif;
   line-height: 35px;
   text-transform: uppercase;
   text-align: center;
@@ -485,9 +453,7 @@ body::-webkit-scrollbar-thumb {
 .testimonials .source p {
   height: 12px;
   color: #ffffff;
-  font-family: "Open Sans", serif;
-  font-size: 13px;
-  font-weight: 400;
+  font: 400 13px "Open Sans", serif;
   line-height: 35px;
   opacity: 0.7;
 }
@@ -515,9 +481,7 @@ body::-webkit-scrollbar-thumb {
 .team .team-text p {
   height: 12px;
   color: #feb960;
-  font-family: "Open Sans - Semibold", serif;
-  font-size: 14px;
-  font-weight: 400;
+  font: 400 14px "Open Sans - Semibold", serif;
   line-height: 40px;
   text-transform: uppercase;
   text-align: center;
@@ -527,9 +491,7 @@ body::-webkit-scrollbar-thumb {
   text-align: center;
   height: 107px;
   color: #ffffff;
-  font-family: Merriweather, serif;
-  font-size: 40px;
-  font-weight: 400;
+  font: 400 40px Merriweather, serif;
   line-height: 65px;
 }
 .team .team-table {
@@ -598,17 +560,13 @@ body::-webkit-scrollbar-thumb {
 .team .team-table .team-name p {
   height: 10px;
   color: #ffffff;
-  font-family: "Open Sans", serif;
-  font-size: 13px;
-  font-weight: 400;
+  font: 400 13px "Open Sans", serif;
   line-height: 65px;
 }
 .team .team-table .team-name .em-name h1 {
   height: 12px;
   color: #feb960;
-  font-family: "Open Sans - Semibold", serif;
-  font-size: 14px;
-  font-weight: 400;
+  font: 400 14px "Open Sans - Semibold", serif;
   line-height: 65px;
   text-transform: uppercase;
 }
@@ -635,17 +593,13 @@ body::-webkit-scrollbar-thumb {
 .team .team-table .team-name:hover .em-name .employee p {
   transform: rotate(90deg);
   color: #ffffff;
-  font-family: "Open Sans", serif;
-  font-size: 13px;
-  font-weight: 400;
+  font: 400 13px "Open Sans", serif;
   line-height: 45px;
 }
 .team .team-table .team-name:hover .em-name .emp-content p {
   display: block;
   color: #bababa;
-  font-family: "Open Sans", serif;
-  font-size: 13px;
-  font-weight: 400;
+  font: 400 13px "Open Sans", serif;
   line-height: 25px;
   width: 180px;
   margin: -45px 12px 0 -32px;
@@ -667,9 +621,7 @@ body::-webkit-scrollbar-thumb {
 .contact .contact-text p {
   height: 12px;
   color: #feb960;
-  font-family: "Open Sans - Semibold", serif;
-  font-size: 14px;
-  font-weight: 400;
+  font: 400 14px "Open Sans - Semibold", serif;
   line-height: 40px;
   text-transform: uppercase;
   text-align: center;
@@ -679,9 +631,7 @@ body::-webkit-scrollbar-thumb {
   text-align: center;
   height: 107px;
   color: #ffffff;
-  font-family: Merriweather, serif;
-  font-size: 40px;
-  font-weight: 400;
+  font: 400 40px Merriweather, serif;
   line-height: 65px;
 }
 .contact .contact-info p {
@@ -692,7 +642,7 @@ body::-webkit-scrollbar-thumb {
   height: 501px;
   box-shadow: 3px 4px 15px rgba(0, 0, 0, 0.3);
   background-color: #181818;
-  margin: 100px 0 0 590px;
+  margin: 10px 0 50px 570px;
 }
 
 /* Contact form */
@@ -740,13 +690,11 @@ body::-webkit-scrollbar-thumb {
   background-color: #181818;
   color: #ffffff;
   border: none;
-  padding: 5px;
   border-bottom: 2px solid #5c5c5c;
-  padding-right: 103px;
+  padding: 5px 108px 5px 5px;
 }
 .contact .contact-box .input-text:focus {
-  font-family: "Open Sans", serif;
-  font-size: 11px;
+  font: 11px "Open Sans", serif;
   font-weight: 400;
   text-transform: uppercase;
   padding-right: 129px;
@@ -756,16 +704,13 @@ body::-webkit-scrollbar-thumb {
 }
 .contact .contact-box .input-text-long {
   background-color: #181818;
-  /* background-color: #000000; */
   color: #ffffff;
   border: none;
-  padding: 5px;
   border-bottom: 2px solid #5c5c5c;
-  padding-right: 450px;
+  padding: 5px 455px 5px 5px;
 }
 .contact .contact-box .input-text-long:focus {
-  font-family: "Open Sans", serif;
-  font-size: 11px;
+  font: 11px "Open Sans", serif;
   font-weight: 400;
   text-transform: uppercase;
   padding-right: 476px;
@@ -791,9 +736,7 @@ body::-webkit-scrollbar-thumb {
 }
 .contact .contact-box .submit-button button p {
   color: #232323;
-  font-family: "Open Sans - Semibold", serif;
-  font-size: 17px;
-  font-weight: 400;
+  font: 400 14px "Open Sans - Semibold", serif;
   line-height: 65px;
   text-transform: uppercase;
   margin-top: -5px;
@@ -807,8 +750,7 @@ body::-webkit-scrollbar-thumb {
   font-size: 24px;
   font-weight: 400;
   line-height: 40px;
-  margin-left: -55px;
-  margin-top: 25px;
+  margin: 25px 0 0 -55px;
 }
 .contact .contact-box .active {
   color: #feb960;
@@ -835,120 +777,13 @@ body::-webkit-scrollbar-thumb {
 }
 .contact .contact-details .office p:nth-child(2) {
   color: #7c7c7c;
-  font-family: "Open Sans", serif;
-  font-size: 14px;
-  font-weight: 400;
+  font: 400 14px "Open Sans", serif;
   line-height: 22px;
 }
 .contact .contact-details .office .contact-icons img {
   width: 23px;
   height: 23px;
   margin: 0;
-}
-
-/*Media query*/
-@media only screen and (min-width: 360px) and (max-width: 767px) {
-  .homepage .heading {
-    margin-left: 19%;
-  }
-
-  .motto {
-    margin-right: 23%;
-  }
-
-  .arrow {
-    margin-left: -10%;
-  }
-
-  .icon-content {
-    margin-right: 20%;
-  }
-
-  .services .line {
-    margin-left: 39%;
-  }
-
-  .services .our-services-text p {
-    margin-right: 22%;
-  }
-
-  .services .service-text p {
-    margin-right: 22%;
-  }
-
-  .our-services {
-    margin-right: 22%;
-  }
-
-  .portfolio-position {
-    margin-right: 22%;
-  }
-
-  .portfolio .horizontal-lines {
-    margin-left: 29%;
-  }
-
-  .testimonials .line {
-    margin-left: 39%;
-  }
-
-  .testimonials .testimonials-text p {
-    margin-right: 22%;
-  }
-
-  .testimonials .testimonials-info {
-    margin-right: 22%;
-  }
-
-  .testimonials .companies {
-    margin-right: 22%;
-  }
-
-  .testimonials .testimonials-description {
-    margin-left: 20%;
-  }
-
-  .testimonials .horizontal-lines {
-    margin-left: 29%;
-  }
-
-  .team .line {
-    margin-left: 39%;
-  }
-
-  .team .team-text p {
-    margin-right: 22%;
-  }
-
-  .team .team-info {
-    margin-right: 22%;
-  }
-
-  .team .team-table {
-    margin-right: 30%;
-    margin-left: 8%;
-  }
-
-  .contact .line {
-    margin-left: 39%;
-  }
-
-  .contact .contact-text p {
-    margin-right: 22%;
-  }
-
-  .contact .contact-info {
-    margin-right: 22%;
-  }
-
-  .contact .contact-box {
-    margin-left: 20%;
-  }
-
-  .contact .contact-details {
-    margin-right: 40%;
-    margin-left: 19%;
-  }
 }
 
 /*# sourceMappingURL=style.css.map */
