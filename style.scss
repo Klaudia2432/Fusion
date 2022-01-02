@@ -1,0 +1,783 @@
+@import "scss/variables";
+@import "scss/preloader";
+@import "scss/scrollbar";
+
+*, *::before, *::after {
+  box-sizing: content-box;
+}
+
+body {
+  margin: 0;
+}
+
+/* Homepage section */
+.homepage {
+  background-image: url(/images/heading-background.png);
+  width: 100%;
+  height: 1000px;
+  padding-top: 1px;
+
+  .heading {
+    width: 750px;
+    height: 275px;
+    border: 1px solid rgba(143, 143, 143, 0.5);
+    margin: 200px 100px 20px 330px;
+
+    .heading-text {
+      width: 638px;
+      height: 152px;
+      text-align: center;
+      margin-left: 40px;
+
+      h1 {
+        color: $whiteColor;
+        font: 400 55px $merriweatherFont;
+        line-height: 90px;
+        margin-top: 50px;
+
+        strong {
+          color: $goldenrod-color;
+          font-weight: 500;
+        }
+      }
+    }
+  }
+}
+
+.motto {
+  display: flex;
+  justify-content: center;
+  color: $whiteColor;
+  text-transform: uppercase;
+  @include open-sans-13px-400;
+
+  p {
+    border-right: $goldenrod-color 2px solid;
+    padding: 0 5px;
+
+    &:last-child {
+      border: none;
+      padding: 0 5px;
+    }
+  }
+}
+
+.arrow {
+  padding: 0 49%;
+  margin-top: 120px;
+
+  img {
+    width: 13px;
+    height: 8px;
+  }
+}
+
+.icon-content {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 150px;
+}
+.icon {
+  width: 45px;
+  height: 45px;
+}
+.getintouch-text {
+  display: flex;
+
+  p {
+    height: 11px;
+    color: $whiteColor;
+    font: 500 14px $robotoFont;
+    text-transform: uppercase;
+    margin-top: 10px;
+  }
+  img {
+    width: 11px;
+    height: 7px;
+    padding: 17px 5px;
+  }
+}
+
+/* Services section */
+.services {
+  width: 100%;
+  height: 826px;
+  background-color: #202020;
+
+  .line {
+    margin-left: 50%;
+    width: 2px;
+    height: 126px;
+    background-color: $goldenColor;
+    color: $goldenColor;
+  }
+
+  .our-services-text p {
+    text-align: center;
+    margin: 0;
+    height: 12px;
+    color: $goldenColor;
+    @include open-sans-semibold-14px-400;
+    line-height: 40px;
+    text-transform: uppercase;
+  }
+
+  .service-text p {
+    text-align: center;
+    height: 107px;
+    color: $whiteColor;
+    font: 400 40px $merriweatherFont;
+    line-height: 65px;
+    margin-top: 20px;
+  }
+
+  .our-services {
+    display: flex;
+    justify-content: center;
+    padding-top: 100px;
+
+    h1 {
+      width: 131px;
+      height: 31px;
+      color: $whiteColor;
+      font: 400 30px $merriweatherFont;
+      line-height: 65px;
+    }
+    p {
+      width: 223px;
+      height: 96px;
+      color: #bbbbbb;
+      @include open-sans-14px-400;
+      line-height: 27px;
+      margin-top: 40px;
+      opacity: .7;
+    }
+  }
+}
+
+.our-services-items {
+  padding: 0 70px;
+}
+
+.see-details {
+  display: flex;
+
+  p {
+    height: 12px;
+    color: $whiteColor;
+    @include open-sans-14px-400;
+    line-height: 28px;
+    text-transform: uppercase;
+    width: auto;
+  }
+  img {
+    width: 11px;
+    height: 7px;
+    padding: 50px 5px;
+  }
+}
+
+/* Portfolio section */
+.portfolio {
+  width: 100%;
+  height: 951px;
+  background-color: $neroColor;
+
+  .portfolio-position {
+    display: flex;
+
+    .brand-content {
+      margin-top: 150px;
+
+      .band p {
+        height: 12px;
+        color: $goldenColor;
+        @include open-sans-semibold-14px-400;
+        line-height: 40px;
+        text-transform: uppercase;
+        margin-right: 20px;
+      }
+    }
+    .project {
+      height: 59px;
+      text-shadow: 0 0 10px rgba(24, 24, 24, 0.5);
+      color: $whiteColor;
+      font: 400 55px $merriweatherFont;
+      line-height: 65.02px;
+      margin-top: 20px;
+      position: absolute;
+      letter-spacing: 3px;
+    }
+  }
+  .portfolio-image img {
+    width: 800px;
+    height: 600px;
+    background-color: rgba(32, 32, 32, 0.34);
+    background-color: #cccccc;
+    margin: 151px 0 20px;
+  }
+  .port-text {
+    margin-left: 40px;
+    margin-top: 519px;
+
+    .portfolio-text {
+      display: flex;
+
+      img {
+        width: 11px;
+        height: 7px;
+        padding: 23px 5px;
+      }
+      p {
+        height: 14px;
+        color: $whiteColor;
+        @include open-sans-semibold-14px-400;
+        line-height: 28px;
+        text-transform: uppercase;
+      }
+    }
+  }
+  .horizontal-lines {
+    margin-left: 37%;
+    margin-top: 2%;
+
+    img {
+      padding: 0 20px;
+    }
+  }
+}
+
+/* Testimonials section */
+.testimonials {
+  width: 100%;
+  height: 1125px;
+  background-color: #202020;
+
+  .line {
+    margin-left: 50%;
+    width: 2px;
+    height: 126px;
+    background-color: $goldenColor;
+    color: $goldenColor;
+  }
+  .testimonials-text p {
+    height: 12px;
+    color: $goldenColor;
+    @include open-sans-semibold-14px-400;
+    line-height: 40px;
+    text-transform: uppercase;
+    text-align: center;
+    margin: 0;
+  }
+  .testimonials-info {
+    text-align: center;
+    height: 107px;
+    color: $whiteColor;
+    font: 400 40px $merriweatherFont;
+
+    p {
+      margin-top: 20px;
+      line-height: 65px;
+    }
+  }
+  .companies {
+    display: flex;
+    justify-content: space-around;
+    padding: 120px 250px 0 250px;
+
+    img {
+
+      &:first-child {
+        width: 152px;
+        height: 25px;
+        margin-top: 20px;
+      }
+
+      &:nth-child(2) {
+        width: 71px;
+        height: 44px;
+        margin-top: 10px;
+      }
+
+      &:nth-child(3) {
+        width: 92px;
+        height: 28px;
+        margin-top: 15px;
+      }
+
+      &:nth-child(4) {
+        width: 68px;
+        height: 42px;
+        margin-top: 10px;
+      }
+
+      &:nth-child(5) {
+        width: 116px;
+        height: 30px;
+        margin-top: 15px;
+      }
+
+      &:nth-child(6) {
+        width: 84px;
+        height: 59px;
+      }
+      &:last-child {
+        width: 76px;
+        height: 24px;
+        filter: contrast(0) brightness(2) saturate(0.5);
+        margin-top: 15px;
+      }
+    }
+  }
+  .testimonials-description {
+    width: 750px;
+    height: 377px;
+    box-shadow: 3px 4px 15px rgba(0, 0, 0, 0.3);
+    background-color: $neroColor;
+    text-align: center;
+    margin: 100px 0 0 325px;
+
+    img {
+      width: 75px;
+      height: 76px;
+      background-color: #d5d5d5;
+    }
+  }
+  .testimonials-description-text p {
+    height: 125px;
+    color: #bbbbbb;
+    font: 400 17px $merriweatherFont;
+    line-height: 35px;
+    text-align: center;
+    opacity: .7;
+    margin-top: 30px;
+  }
+
+  .author {
+    height: 45px;
+    background-color: $neroColor;
+    display: flex;
+    justify-content: center;
+
+    .author-line {
+      margin-top: 30px;
+
+      img {
+        height: 2px;
+        width: 120px;
+        background-color: #303030;
+      }
+    }
+
+    p {
+      height: 12px;
+      color: $goldenColor;
+      @include open-sans-semibold-14px-400;
+      line-height: 35px;
+      text-transform: uppercase;
+      text-align: center;
+      margin-top: 25px;
+      padding: 0 30px;
+    }
+  }
+
+  .source p {
+    height: 12px;
+    color: $whiteColor;
+    @include open-sans-13px-400;
+    line-height: 35px;
+    opacity: .7;
+  }
+
+  .horizontal-lines {
+    margin-left: 37%;
+    margin-top: 3%;
+
+    img {
+      padding: 0 20px;
+    }
+  }
+}
+
+/* Team section */
+.team {
+  width: 100%;
+  height: 1100px;
+  background-color: $neroColor;
+
+  .line {
+    margin-left: 50%;
+    width: 2px;
+    height: 126px;
+    background-color: $goldenColor;
+    color: $goldenColor;
+  }
+
+  .team-text p {
+    height: 12px;
+    color: $goldenColor;
+    @include open-sans-semibold-14px-400;
+    line-height: 40px;
+    text-transform: uppercase;
+    text-align: center;
+    margin: 0;
+  }
+
+  .team-info {
+    text-align: center;
+    height: 107px;
+    color: $whiteColor;
+    font: 400 40px $merriweatherFont;
+    line-height: 65px;
+  }
+
+  .team-table {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    margin: 30px 150px 20px 150px;
+    height: 625px;
+
+    .team-name {
+      text-align: center;
+      padding: 50px 0 100px 0;
+      position: relative;
+      width: 25%;
+      height: 55%;
+
+      &:hover {
+        text-align: left;
+        padding: 0.1px;
+        transition: all .5s ease-in-out 0s;
+        width: 25%;
+        height: 55%;
+
+        .emp-img {
+          margin-right: 200px;
+          border-left: $goldenBorder;
+          border-top: $goldenBorder;
+
+          img {
+            width: 49px;
+            height: 49px;
+            margin-top: 15px;
+            margin-left: 15px;
+          }
+        }
+      }
+
+      &:first-child {
+        @include darkGray-border-right-bottom;
+      }
+
+      &:nth-child(2){
+        @include darkGray-border-right-bottom;
+      }
+
+      &:nth-child(3){
+        @include darkGray-border-right-bottom;
+      }
+
+      &:nth-child(4){
+        border-bottom: $darkGreyBorder;
+      }
+
+      &:nth-child(5){
+        border-right: $darkGreyBorder;
+      }
+
+      &:nth-child(6){
+        border-right: $darkGreyBorder;
+      }
+
+      &:nth-child(7){
+        border-right: $darkGreyBorder;
+      }
+
+      img {
+        width: 120px;
+        height: 121px;
+        background-color: #d5d5d5;
+        border-radius: 50%;
+      }
+
+      p {
+        height: 10px;
+        color: $whiteColor;
+        @include open-sans-13px-400;
+        line-height: 65px;
+      }
+
+      .em-name {
+
+        h1 {
+          height: 12px;
+          color: #feb960;
+          @include open-sans-semibold-14px-400;
+          line-height: 65px;
+          text-transform: uppercase;
+        }
+
+        .emp-content p {
+          display: none;
+        }
+      }
+
+      .em-name .employee {
+        display: block;
+
+        p {
+          display: block;
+        }
+      }
+
+      &:hover .em-name {
+        display: flex;
+
+        .employee {
+          margin-top: 70px;
+          margin-left: -20px;
+
+          h1 {
+            transform: rotate(90deg);
+            line-height: 5px;
+          }
+          p {
+            transform: rotate(90deg);
+            color: $whiteColor;
+            @include open-sans-13px-400;
+            line-height: 45px;
+          }
+        }
+
+        .emp-content p {
+          display: block;
+          color: #bababa;
+          @include open-sans-13px-400;
+          line-height: 25px;
+          width: 180px;
+          margin: -45px 12px 0 -32px;
+        }
+      }
+    }
+  }
+}
+
+/* Contact section */
+.contact {
+  width: 100%;
+  height: 1175px;
+  background-color: #353535;
+
+  .line {
+    margin-left: 50%;
+    width: 2px;
+    height: 126px;
+    background-color: $goldenColor;
+    color: $goldenColor;
+  }
+
+  .contact-text p {
+    height: 12px;
+    color: $goldenColor;
+    @include open-sans-semibold-14px-400;
+    line-height: 40px;
+    text-transform: uppercase;
+    text-align: center;
+    margin: 0;
+  }
+
+  .contact-info {
+    text-align: center;
+    height: 107px;
+    color: $whiteColor;
+    font: 400 40px $merriweatherFont;
+    line-height: 65px;
+
+    p {
+      margin-top: 20px;
+    }
+  }
+
+  .contact-box {
+    width: 751px;
+    height: 501px;
+    box-shadow: 3px 4px 15px rgba(0, 0, 0, 0.3);
+    background-color: $neroColor;
+    margin: 10px 0 50px 570px;
+  }
+}
+
+/* Contact form */
+.contact .contact-box {
+
+  form {
+    padding-top: 40px;
+  }
+
+  .label {
+    width: 82px;
+    height: 12px;
+    color: $whiteColor;
+    font-size: 11px;
+    font-weight: 400;
+    text-transform: uppercase;
+  }
+
+  .form-1st-section {
+    display: flex;
+    margin-bottom: 50px;
+
+    .client-name {
+      margin-left: 65px;
+      margin-right: 35px;
+    }
+
+    .client-mail {
+      margin-left: 35px;
+    }
+  }
+
+  .form-2nd-section {
+    display: flex;
+    margin-bottom: 50px;
+
+    .client-company {
+      margin-left: 65px;
+      margin-right: 35px;
+    }
+
+    .client-subject {
+      margin-left: 35px;
+    }
+  }
+
+  .form-3rd-section {
+    margin-left: 65px;
+
+    img {
+      width: 623px;
+      margin-bottom: 30px;
+    }
+  }
+
+  .input-text {
+    background-color: $neroColor;
+    color: $whiteColor;
+    border: none;
+    border-bottom: 2px solid #5c5c5c;
+    padding: 5px 108px 5px 5px;
+
+    &:focus {
+      font: 11px $openSansFont;
+      font-weight: 400;
+      text-transform: uppercase;
+      padding-right: 129px;
+      border-bottom: $goldenBorder;
+      outline: none;
+      padding-top: 8px;
+    }
+  }
+
+  .input-text-long {
+    background-color: $neroColor;
+    color: $whiteColor;
+    border: none;
+    border-bottom: 2px solid #5c5c5c;
+    padding: 5px 455px 5px 5px;
+
+    &:focus {
+      font: 11px $openSansFont;
+      font-weight: 400;
+      text-transform: uppercase;
+      padding-right: 476px;
+      border-bottom: $goldenBorder;
+      outline: none;
+      padding-top: 8px;
+    }
+  }
+
+  .submit-button {
+    display: flex;
+    margin-left: 35%;
+    margin-top: 15px;
+
+    button {
+      width: 220px;
+      height: 60px;
+      background-color: $goldenColor;
+      background-image: linear-gradient(300deg, $cherokeeColor 0%, $goldenrod-color 74%);
+      border: none;
+      transition: all 2s ease 0s;
+
+      &:hover {
+        background: $goldenColor;
+      }
+
+      p {
+        color: #232323;
+        @include open-sans-semibold-14px-400;
+        line-height: 65px;
+        text-transform: uppercase;
+        margin-top: -5px;
+        margin-right: 20px;
+      }
+    }
+  }
+
+  img {
+    width: 18px;
+    height: 9px;
+    color: #232323;
+    font-family: $elegantIcons;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 40px;
+    margin: 25px 0 0 -55px;
+  }
+
+  .active {
+    color: $goldenColor;
+    font-size: 11px;
+  }
+}
+
+/* Contact details */
+.contact .contact-details {
+  display: flex;
+  justify-content: space-around;
+  margin: 90px 335px 0 325px;
+
+  img {
+    width: 45px;
+    height: 45px;
+    margin-top: 30px;
+  }
+
+  .office {
+
+    p {
+
+      &:first-child {
+        color: $whiteColor;
+        font-family: $opensansSemiboldFont;
+        font-weight: 600;
+        line-height: 40px;
+        text-transform: uppercase;
+      }
+
+      &:nth-child(2) {
+        color: #7c7c7c;
+        @include open-sans-14px-400;
+        line-height: 22px;
+      }
+    }
+
+    .contact-icons img {
+      width: 23px;
+      height: 23px;
+      margin:0;
+    }
+  }
+}

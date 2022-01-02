@@ -2,12 +2,15 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link rel="stylesheet" href="style.css" type="text/css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
     <title>Fusion</title>
 </head>
 <body>
-    
+    <div class="preloader">
+        <div class="loader"></div>
+    </div>
     <div class="homepage">
         <div class="heading">
             <div class="heading-text">
@@ -35,7 +38,7 @@
 
     <div class="services">
         <div class="line">
-            |
+
         </div>
         <div class="our-services-text">
             <p>Our Services</p>
@@ -119,7 +122,7 @@
 
     <div class="testimonials">
         <div class="line">
-            |
+
         </div>
         <div class="testimonials-text">
             <p>Testimonials</p>
@@ -169,7 +172,7 @@
 
     <div class="team">
         <div class="line">
-            |
+
         </div>
         <div class="team-text">
             <p>Our Team</p>
@@ -340,11 +343,10 @@
             </div>
         </div>
     </div>
-    </div>
 
     <div class="contact">
         <div class="line">
-            |
+
         </div>
         <div class="contact-text">
             <p>Contact us</p>
@@ -356,30 +358,30 @@
             <form>
                 <div class="form-1st-section">
                     <div class="client-name">
-                        <label class="label" id="label-name" for="name">Your Name</label><br/>
+                        <label class="label" id="label-name" for="input-name">Your Name</label><br/>
                         <input class="input-text" id="input-name" type="text"><br/>
                         <br/>
                     </div>
                     <div class="client-mail">
-                        <label class="label" id="label-mail" for="mail">Your email</label><br/>
+                        <label class="label" id="label-mail" for="input-mail">Your email</label><br/>
                         <input class="input-text" id="input-mail" type="text"><br/>
                         <br/>
                     </div>
                 </div>
                 <div class="form-2nd-section">
                     <div class="client-company">
-                        <label class="label" id="label-company" for="company">Company</label><br/>
+                        <label class="label" id="label-company" for="input-company">Company</label><br/>
                         <input class="input-text" id="input-company" type="text"><br/>
                         <br/>
                     </div>
                     <div class="client-subject">
-                        <label class="label" id="label-subject" for="subject">Subject</label><br/>
+                        <label class="label" id="label-subject" for="input-subject">Subject</label><br/>
                         <input class="input-text" id="input-subject" type="text"><br/>
                         <br/>
                     </div>
                 </div>
                 <div class="form-3rd-section">
-                    <label class="label" id="label-message" for="message">Your message</label><br/>
+                    <label class="label" id="label-message" for="input-message">Your message</label><br/>
                     <input class="input-text-long" id="input-message" type="text"><br/>
             
                     <br/>
@@ -417,6 +419,8 @@
             </div>
         </div>
     </div>
-    <script src="script.js"></script>
+    <script src="script.js" type="text/javascript"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.js" type="text/javascript"></script>
+    <script src="jquery-effects.js" type="text/javascript"></script>
 </body>
 </html>
