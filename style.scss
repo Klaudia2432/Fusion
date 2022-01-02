@@ -291,35 +291,41 @@ body {
         width: 152px;
         height: 25px;
         margin-top: 20px;
+        filter: contrast(0) brightness(2) saturate(0.5);
       }
 
       &:nth-child(2) {
         width: 71px;
         height: 44px;
         margin-top: 10px;
+        filter: contrast(0) brightness(2) saturate(0.5);
       }
 
       &:nth-child(3) {
         width: 92px;
         height: 28px;
         margin-top: 15px;
+        filter: contrast(0) brightness(2) saturate(0.5);
       }
 
       &:nth-child(4) {
         width: 68px;
         height: 42px;
         margin-top: 10px;
+        filter: contrast(0) brightness(2) saturate(0.5);
       }
 
       &:nth-child(5) {
         width: 116px;
         height: 30px;
         margin-top: 15px;
+        filter: contrast(0) brightness(2) saturate(0.5);
       }
 
       &:nth-child(6) {
         width: 84px;
         height: 59px;
+        filter: contrast(0) brightness(2) saturate(0.5);
       }
       &:last-child {
         width: 76px;
